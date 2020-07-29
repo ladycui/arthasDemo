@@ -4,26 +4,36 @@ this repo is a note book of learning arthas, an online Java diagnostic tool
 ##### [watch](#https://alibaba.github.io/arthas/watch.html)
 
 > watch <package.className> <method_patern> "{params,target,returnObj}" <condition_expression>
->
-> > condition_expression
-> >
-> > * -b befor the method is invoked
-> > * -s after the method is invoked
-> > * -e after the exception happens
-> > * -x the depth of output field, default 1
-> > * -n monitor times
-> >
-> > params: input params
-> >
-> > target: fields of one class
-> >
-> > returnObj: the output param
-> >
-> > 
+
+* condition_expression
+
+  * -b befor the method is invoked
+
+  * -s after the method is invoked
+
+  * -e after the exception happens
+
+  * -x the depth of output field, default 1
+
+  * -n monitor times
+
+* params
+
+   input params
+
+* target
+
+  fields of one class
+
+* returnObj
+
+  the output param
 
 expamples:
 
-` watch com.example.demo.service.TestService testService "{params,target,returnObj}" -x 3`
+```
+$ watch com.example.demo.service.TestService testService "{params,target,returnObj}" -x 3
+```
 
 output:
 
