@@ -1,7 +1,7 @@
 # arthasDemo
 this repo is a note book of learning arthas, an online Java diagnostic tool
 
-##### [watch](#https://alibaba.github.io/arthas/watch.html)
+## [watch](https://alibaba.github.io/arthas/watch.html "doc from official site")
 
 > watch <package.className> <method_patern> "{params,target,returnObj}" <condition_expression>
 
